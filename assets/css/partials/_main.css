@@ -2,17 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+/*    gap: 50px;*/
     margin: auto;
    
 }
 
-.biografia {
+/*.biografia {
     width: 450px;
-}
+}*/
 .imagen{
-    height: 200px;
-    width: 300px;
+    /*display: flex;*/
+    height: 40%;
+    width: 40%;
+    max-width: 320px;
+    max-height: 220px;
+  /*  height: 220px;
+    width: 320px; 
+    left: 0;*/
 }
 .skill{
     text-align: center;
