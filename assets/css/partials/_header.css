@@ -18,3 +18,24 @@ nav ul{
     flex-direction: row;
     gap: 40px;
 }
+.menu-burguer {
+    display: none;
+    cursor: pointer;
+
+}
+/*Media Query para que el bloque de codigo css sea responsive*/
+/*@media screen and (max-with : 720px) {
+    .menu-burguer {
+        display: block;
+        cursor: pointer;
+    
+    }
+
+    nav ul{
+        display: fixed;
+        flex-direction: column;
+        top: 86px;
+        width: 90px;
+        background-color: var(--bg-color);
+    }
+}*/

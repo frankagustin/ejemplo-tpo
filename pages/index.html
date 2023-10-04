@@ -1,42 +1,99 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+   <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
   </head>
   <body>
-    <nav>
-      <h1>Isidro</h1>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="./skills.html">Skills</a></li>
-        <li><a href="./proyectos.html">Proyectos</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section  class="principal">
-        <img src="https://picsum.photos/536/354" alt="" class="imagen">
-        <div class="biografia">
-          <p class="texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro debitis illo optio magnam
-              doloribus, sunt delectus adipisci ex dolore? Fugiat accusamus incidunt optio iste laboriosam?
-              Accusantium cum eos labore!
-          </p>
-          <h2>Sobre mi</h2>
-
+    <!-- <div class="container"> -->
+      <nav class="navbar navbar-expand-sm" style="background-color: var(--bg-color);">
+        <a class="navbar-brand" href="#">Isidro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        
-      </section>
-    </main>
+      </nav>
+      <main>
+        <section class="principal">
+          <img src="https://picsum.photos/536/354" alt="" class="imagen" />
+          <div class="biografia">
+            <p class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              porro debitis illo optio magnam doloribus, sunt delectus adipisci
+              ex dolore? Fugiat accusamus incidunt optio iste laboriosam?
+              Accusantium cum eos labore!
+            </p>
+            <h2>Sobre mi</h2>
+          </div>
+        </section>
+      </main>
+      <button class="show-example-btn" aria-label="Show SweetAlert2 success message" onclick="executeExample('sweetAlert')">
+        Mostrar mensaje
+      </button>
     <footer>
-      <p>&copy; copyright</p>
+      <p>&copy; Copyright</p>
       <p>Construido por Isidro</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    <script src="../assets/js/script.js"></script>
+  <!-- </div> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="../assets/js/scriptAlert.js"></script>
+    
+    <!-- <script src="../assets/js/scriptif.js"></script>
+    <script src="../assets/js/script.js"></script> 
+    <script src="../assets/js/scriptCiclos.js"></script>-->
+    <script src="../assets/js/scriptFunciones.js"></script>
   </body>
 </html>
